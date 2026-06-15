@@ -352,6 +352,33 @@ if(heroTitle){
 
 }
 
+document.querySelectorAll(".accordion-header").forEach(btn => {
+
+    btn.addEventListener("click", function () {
+
+        const item = this.parentElement;
+        const content = this.nextElementSibling;
+
+        // close others
+        document.querySelectorAll(".accordion-item").forEach(el => {
+            if (el !== item) {
+                el.classList.remove("active");
+                el.querySelector(".accordion-content").style.maxHeight = null;
+            }
+        });
+
+        // toggle current
+        item.classList.toggle("active");
+
+        if (item.classList.contains("active")) {
+            content.style.maxHeight = content.scrollHeight + "px";
+        } else {
+            content.style.maxHeight = null;
+        }
+
+    });
+
+});
 /* ==========================
    End of Script
 ========================== */
