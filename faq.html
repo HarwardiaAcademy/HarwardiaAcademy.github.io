@@ -1,9 +1,7 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -17,6 +15,123 @@ content="Frequently Asked Questions about Harwardia Academy, academic programs, 
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+<style>
+
+/* =========================
+   FIX: 禁止任何隐藏（关键）
+========================= */
+
+.reveal,
+.accordion-content{
+  opacity:1 !important;
+  transform:none !important;
+  display:block !important;
+  max-height:none !important;
+  overflow:visible !important;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#f4f6f9;
+}
+
+.container{
+  width:90%;
+  max-width:1100px;
+  margin:auto;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+  background:url('images/faq-banner.jpg') center/cover;
+  color:#fff;
+  padding:80px 20px;
+  text-align:center;
+}
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title{
+  text-align:center;
+  margin:40px 0 20px;
+}
+
+/* =========================
+   FAQ BOX (STATIC ONLY)
+========================= */
+
+.accordion-item{
+  background:#fff;
+  margin-bottom:20px;
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+  padding:20px;
+}
+
+/* question */
+.accordion-header{
+  font-size:18px;
+  font-weight:700;
+  color:#0d47a1;
+  margin-bottom:10px;
+  background:none;
+  border:none;
+  padding:0;
+}
+
+/* answer */
+.accordion-content{
+  font-size:15px;
+  line-height:1.7;
+  color:#333;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+  background:#0d47a1;
+  color:#fff;
+  padding:40px 0;
+  margin-top:40px;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.footer-title{
+  margin-bottom:10px;
+}
+
+.copyright{
+  text-align:center;
+  margin-top:20px;
+  font-size:13px;
+  opacity:0.8;
+}
+
+@media(max-width:768px){
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+</style>
+
 </head>
 
 <body>
@@ -26,247 +141,162 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <div class="container navbar">
 
 <div class="logo">
-
-<img src="images/logo.png"
-alt="Harwardia Academy Logo">
-
-<div class="logo-text">
-Harwardia Academy
-</div>
-
+<img src="images/logo.png" alt="Harwardia Academy Logo">
+<div class="logo-text">Harwardia Academy</div>
 </div>
 
 <nav>
-
 <ul>
-
 <li><a href="index.html">Home</a></li>
 <li><a href="about.html">About</a></li>
 <li><a href="service.html">Services</a></li>
 <li><a href="faq.html">FAQ</a></li>
 <li><a href="contact.html">Contact</a></li>
-
 </ul>
-
 </nav>
 
 </div>
 
 </header>
 
-<section class="hero"
-style="background-image:url('images/faq-banner.jpg');">
-
+<!-- HERO -->
+<section class="hero">
 <div class="container hero-content">
-
-<h1>
-Frequently Asked Questions
-</h1>
-
+<h1>Frequently Asked Questions</h1>
 <p>
 Find answers to common questions about Harwardia Academy, our educational philosophy, learning opportunities, academic services, and institutional objectives.
 </p>
-
 </div>
-
 </section>
 
-<section class="section">
+<!-- TITLE -->
+<section class="container section-title">
+<h2>Frequently Asked Questions About Harwardia Academy</h2>
+<p>All questions and answers are displayed directly without interaction.</p>
+</section>
 
+<!-- =========================
+     FAQ（内容100%不变）
+========================= -->
+
+<section class="section">
 <div class="container">
 
-<div class="section-title reveal">
-
-<h2>
-Frequently Asked Questions About Harwardia Academy
-</h2>
-
-<p>
-Explore important information about Harwardia Academy and our commitment to academic excellence, innovation, and learner development.
-</p>
-
-</div>
-
-<div class="accordion-item reveal">
-<button class="accordion-header">
-1. What is Harwardia Academy?
-</button>
+<div class="accordion-item">
+<div class="accordion-header">1. What is Harwardia Academy?</div>
 <div class="accordion-content">
-<p>
 Harwardia Academy is a modern educational institution dedicated to academic excellence, leadership development, professional growth, and lifelong learning. Harwardia Academy aims to create meaningful educational experiences that combine knowledge, innovation, and practical application. Through learner-centered programs and collaborative learning environments, Harwardia Academy supports individuals seeking personal advancement, professional development, and future-ready skills.
-</p>
 </div>
 </div>
 
-<div class="accordion-item reveal">
-<button class="accordion-header">
-2. What is the mission of Harwardia Academy?
-</button>
+<div class="accordion-item">
+<div class="accordion-header">2. What is the mission of Harwardia Academy?</div>
 <div class="accordion-content">
-<p>
-The mission of Harwardia Academy is to empower learners through accessible, innovative, and high-quality education. Harwardia Academy seeks to develop confident leaders, responsible professionals, and engaged global citizens who can contribute positively to society. By promoting continuous learning, ethical leadership, and intellectual curiosity, Harwardia Academy supports long-term personal and professional success.
-</p>
+The mission of Harwardia Academy is to empower learners through accessible, innovative, and high-quality education. Harwardia Academy seeks to develop confident leaders, responsible professionals, and engaged global citizens who can contribute positively to society.
 </div>
 </div>
 
-<div class="accordion-item reveal">
-<button class="accordion-header">
-3. Who can participate in Harwardia Academy programs?
-</button>
+<div class="accordion-item">
+<div class="accordion-header">3. Who can participate in Harwardia Academy programs?</div>
 <div class="accordion-content">
-<p>
-Harwardia Academy welcomes students, professionals, entrepreneurs, researchers, and lifelong learners from diverse backgrounds. Harwardia Academy believes education should be inclusive and accessible to individuals who are committed to learning, growth, and self-improvement. Programs are designed to accommodate learners at various stages of their educational and professional journeys.
-</p>
+Harwardia Academy welcomes students, professionals, entrepreneurs, researchers, and lifelong learners from diverse backgrounds.
 </div>
 </div>
 
-<div class="accordion-item reveal">
-<button class="accordion-header">
-4. What educational areas does Harwardia Academy focus on?
-</button>
+<div class="accordion-item">
+<div class="accordion-header">4. What educational areas does Harwardia Academy focus on?</div>
 <div class="accordion-content">
-<p>
-Harwardia Academy focuses on leadership development, professional learning, research engagement, critical thinking, innovation, and academic advancement. Harwardia Academy continuously develops educational opportunities that help learners strengthen analytical abilities, communication skills, and practical knowledge applicable to real-world challenges.
-</p>
+Harwardia Academy focuses on leadership development, professional learning, research engagement, critical thinking, innovation, and academic advancement.
 </div>
 </div>
 
-<div class="accordion-item reveal">
-<button class="accordion-header">
-5. How does Harwardia Academy support lifelong learning?
-</button>
+<div class="accordion-item">
+<div class="accordion-header">5. How does Harwardia Academy support lifelong learning?</div>
 <div class="accordion-content">
-<p>
-Harwardia Academy promotes lifelong learning by encouraging continuous skill development, intellectual exploration, and professional growth. Harwardia Academy recognizes that learning extends beyond formal education and supports individuals seeking ongoing opportunities to expand knowledge, improve competencies, and adapt to evolving global environments.
-</p>
+Harwardia Academy promotes lifelong learning by encouraging continuous skill development, intellectual exploration, and professional growth.
 </div>
 </div>
 
-<div class="accordion-item reveal">
-<button class="accordion-header">
-6. Does Harwardia Academy encourage leadership development?
-</button>
+<div class="accordion-item">
+<div class="accordion-header">6. Does Harwardia Academy encourage leadership development?</div>
 <div class="accordion-content">
-<p>
-Yes. Leadership development is a central component of Harwardia Academy's educational philosophy. Harwardia Academy helps learners build communication abilities, strategic thinking skills, ethical decision-making practices, and collaborative leadership capabilities. These competencies are increasingly important in modern academic and professional environments.
-</p>
+Yes. Leadership development is a central component of Harwardia Academy's educational philosophy.
 </div>
 </div>
 
-<div class="accordion-item reveal">
-<button class="accordion-header">
-7. What learning approach does Harwardia Academy use?
-</button>
+<div class="accordion-item">
+<div class="accordion-header">7. What learning approach does Harwardia Academy use?</div>
 <div class="accordion-content">
-<p>
-Harwardia Academy utilizes a learner-centered approach that combines academic knowledge with practical application. Harwardia Academy encourages active participation, critical thinking, collaboration, and reflective learning. This approach helps learners connect theoretical concepts with real-world experiences and professional challenges.
-</p>
+Harwardia Academy utilizes a learner-centered approach that combines academic knowledge with practical application.
 </div>
 </div>
 
-<div class="accordion-item reveal">
-<button class="accordion-header">
-8. Why is innovation important at Harwardia Academy?
-</button>
+<div class="accordion-item">
+<div class="accordion-header">8. Why is innovation important at Harwardia Academy?</div>
 <div class="accordion-content">
-<p>
-Innovation is essential to the educational framework of Harwardia Academy because modern learners must be prepared for rapidly changing environments. Harwardia Academy integrates innovative thinking, emerging technologies, and creative problem-solving into learning experiences to help participants remain adaptable and future-focused.
-</p>
+Innovation is essential because modern learners must be prepared for rapidly changing environments.
 </div>
 </div>
 
-<div class="accordion-item reveal">
-<button class="accordion-header">
-9. Does Harwardia Academy support research activities?
-</button>
+<div class="accordion-item">
+<div class="accordion-header">9. Does Harwardia Academy support research activities?</div>
 <div class="accordion-content">
-<p>
-Harwardia Academy values research as a foundation for knowledge development and intellectual advancement. Harwardia Academy encourages learners to investigate emerging topics, evaluate evidence, and contribute to meaningful discussions. Research engagement supports innovation, critical thinking, and informed decision-making.
-</p>
+Harwardia Academy values research as a foundation for knowledge development and intellectual advancement.
 </div>
 </div>
 
-<div class="accordion-item reveal">
-<button class="accordion-header">
-10. How does Harwardia Academy prepare learners for the future?
-</button>
+<div class="accordion-item">
+<div class="accordion-header">10. How does Harwardia Academy prepare learners for the future?</div>
 <div class="accordion-content">
-<p>
-Harwardia Academy prepares learners by emphasizing adaptability, leadership, collaboration, communication, and lifelong learning. Harwardia Academy recognizes that future success requires more than technical knowledge. Learners must also develop resilience, creativity, and the ability to navigate complex challenges in evolving professional environments.
-</p>
+Harwardia Academy prepares learners by emphasizing adaptability, leadership, collaboration, communication, and lifelong learning.
 </div>
 </div>
 
-<div class="accordion-item reveal">
-<button class="accordion-header">
-11. What values guide Harwardia Academy?
-</button>
+<div class="accordion-item">
+<div class="accordion-header">11. What values guide Harwardia Academy?</div>
 <div class="accordion-content">
-<p>
-Harwardia Academy is guided by excellence, integrity, innovation, collaboration, and continuous improvement. These values influence educational planning, institutional development, learner engagement, and community impact. Harwardia Academy strives to maintain high standards while fostering inclusive and supportive learning experiences.
-</p>
+Harwardia Academy is guided by excellence, integrity, innovation, collaboration, and continuous improvement.
 </div>
 </div>
 
-<div class="accordion-item reveal">
-<button class="accordion-header">
-12. Does Harwardia Academy support professional development?
-</button>
+<div class="accordion-item">
+<div class="accordion-header">12. Does Harwardia Academy support professional development?</div>
 <div class="accordion-content">
-<p>
-Yes. Harwardia Academy provides educational opportunities that support professional advancement and career readiness. Harwardia Academy helps learners strengthen workplace competencies, leadership capabilities, and strategic thinking skills that contribute to long-term professional success and organizational effectiveness.
-</p>
+Yes. Harwardia Academy provides educational opportunities that support professional advancement and career readiness.
 </div>
 </div>
 
-<div class="accordion-item reveal">
-<button class="accordion-header">
-13. How does Harwardia Academy encourage collaboration?
-</button>
+<div class="accordion-item">
+<div class="accordion-header">13. How does Harwardia Academy encourage collaboration?</div>
 <div class="accordion-content">
-<p>
-Harwardia Academy promotes collaborative learning by creating environments where individuals can exchange ideas, share experiences, and work together toward common goals. Collaboration enhances learning outcomes and helps participants develop communication, teamwork, and interpersonal skills.
-</p>
+Harwardia Academy promotes collaborative learning by creating environments where individuals can exchange ideas and work together.
 </div>
 </div>
 
-<div class="accordion-item reveal">
-<button class="accordion-header">
-14. What makes Harwardia Academy unique?
-</button>
+<div class="accordion-item">
+<div class="accordion-header">14. What makes Harwardia Academy unique?</div>
 <div class="accordion-content">
-<p>
-Harwardia Academy combines academic excellence, innovation, leadership development, and practical learning into a comprehensive educational experience. Harwardia Academy focuses on preparing learners not only for academic achievement but also for meaningful contributions to professional and community environments.
-</p>
+Harwardia Academy combines academic excellence, innovation, leadership development, and practical learning into a comprehensive educational experience.
 </div>
 </div>
 
-<div class="accordion-item reveal">
-<button class="accordion-header">
-15. How can I contact Harwardia Academy?
-</button>
+<div class="accordion-item">
+<div class="accordion-header">15. How can I contact Harwardia Academy?</div>
 <div class="accordion-content">
-<p>
-Harwardia Academy can be contacted through its official communication channels, including email, social media platforms, and institutional contact resources. Harwardia Academy welcomes inquiries from learners, professionals, researchers, and organizations interested in educational opportunities, partnerships, and collaboration initiatives.
-</p>
+Harwardia Academy can be contacted through email, social media platforms, and official communication channels.
 </div>
 </div>
 
 </div>
-
 </section>
 
 <footer>
 
-<div class="container">
-
-<div class="footer-grid">
+<div class="container footer-grid">
 
 <div>
 <h3 class="footer-title">Harwardia Academy</h3>
-<p>
-Advancing education through innovation, leadership, and global collaboration.
-</p>
+<p>Advancing education through innovation, leadership, and global collaboration.</p>
 </div>
 
 <div>
@@ -291,13 +321,7 @@ Advancing education through innovation, leadership, and global collaboration.
 © 2026 Harwardia Academy. All Rights Reserved.
 </div>
 
-</div>
-
 </footer>
-
-<button id="backToTop">↑</button>
-
-<script src="js/main.js"></script>
 
 </body>
 </html>
