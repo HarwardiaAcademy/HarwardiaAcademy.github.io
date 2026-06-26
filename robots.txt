@@ -1,0 +1,13 @@
+# ==========================================
+# Harwardia Academy
+# https://harwardiaacademy.github.io/
+# ==========================================
+
+User-agent: *
+Allow: /
+
+# Website Information
+# Title: Harwardia Academy
+# Description: Harwardia Academy is dedicated to academic excellence, leadership development, innovation, and lifelong learning through modern educational programs and global collaboration.
+
+Sitemap: https://harwardiaacademy.github.io/sitemap.xml
